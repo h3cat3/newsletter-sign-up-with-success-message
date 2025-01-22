@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="description" content=" Newsletter sing up with success message" />
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="reset.css">
+
+  <!--import media quries-->
+  <link rel="stylesheet" media='screen and (min-width: 780px) ' href="desktop.css"/>
+
+  
+  <title>Frontend Mentor | Newsletter sing up with success message</title>
+  
+  <!-- import Karla font family-->
+ 
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Karla:ital,wght@0,200..800;1,200..800&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+  <!-- icon library -->
+  <script src="https://kit.fontawesome.com/514772c0d7.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+    <body>
+        <main>
+            <section class="text">
+                <h1>
+                    Stay updated!
+                </h1>
+                <p>
+                    Join 60,000+ product managers receiving monthly updates on: 
+                </p>
+                <ul>
+                    <li>
+                        Product discovery and building what matters 
+                    </li>
+                    <li>
+                        Measuring to ensure updates are a success 
+                    </li>
+                    <li>
+                        And much more! 
+                    </li>
+                </ul>
+                <form id="newsletter">
+                    <label for="email" >Email address</label>
+                    <input type="email" id="email" placeholder="email@company.com" required>
+                    <button type="submit">
+                        Subscribe to monthly newsletter
+                    </button>
+                </form>
+            </section>
+            <picture>
+            <!--Image for mobile-->
+                <source srcset="./assets/images/illustration-sign-up-desktop.svg" media="(min-width: 780px)"> 
+                <img src="./assets/images/illustration-sign-up-mobile.svg" alt="ilustration">
+            </picture>
+        </main>
+        <!--success message-->
+        <article>   
+            <h1>
+                Thanks for subscribing!
+            </h1>
+            <p>
+                A confirmation email has been sent to ash@loremcompany.com. Please open it and click the button inside to confirm your subscription.
+            </p>
+            <a>
+                Dismiss message
+            </a>
+        </article>
+        
+    </body>
+</html>

@@ -1,0 +1,17 @@
+@media (min-width: 780px) {
+    body {
+        background-color: var(--Charcoal-Grey);
+        width: 90%;
+        margin: 5rem auto;
+    }
+    main {
+        flex-direction: row;
+        border-radius: 2.25rem;
+        background-color: var(--White);
+        padding: 1rem;
+        gap: 3rem;
+    }
+    .text {
+        width: 23.5rem;
+    }
+}
