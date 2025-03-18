@@ -16,7 +16,7 @@ send.addEventListener('click',(ev) => {
     //open modal
     modal.style.display = "flex";
   } else {
-    //error sgtate, red border and background color, and message
+    //error state, red border and background color, and message
     email.style.borderColor = "hsl(4, 100%, 67%)";
     email.style.backgroundColor = "rgba(255, 97, 85, 0.15)";
     email.style.color = "hsl(4, 100%, 67%)";
