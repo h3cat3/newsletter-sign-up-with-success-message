@@ -14,4 +14,13 @@
     .text {
         width: 23.5rem;
     }
+    .modal {
+        background-color: var(--Dark-Slate-Grey);
+    }
+    .modal-box{
+        width: 504px;
+        height: 520px;
+        border-radius: 36px;
+        padding: 4rem;
+    }
 }

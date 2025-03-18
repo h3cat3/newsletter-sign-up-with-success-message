@@ -15,6 +15,9 @@
 body {
     font-family: 'Roboto';
     color: var(--Dark-Slate-Grey);
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
 }
 main {
     display: flex;
@@ -37,6 +40,10 @@ p {
     padding-top: 1.5rem;
     font-weight: 400;
 }
+#error{
+    color: var(--Tomato);
+    float: right;
+}
 ul {
     list-style-position: outside;
     list-style-image: url('./assets/images/icon-list.svg');
@@ -57,7 +64,7 @@ input {
     padding-left: 1rem;
     
 }
-input:active {
+input:focus {
     border-color: var(--Dark-Slate-Grey);
 }
 input::placeholder{
@@ -75,4 +82,43 @@ button {
 }
 button:hover {
     background-color: var(--Tomato);
+}
+.modal{
+    display: none; /* */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    justify-content: center;
+    align-items: center;
+   background-color: white;
+}
+.modal-image {
+    width: 64px;
+    height: 64px;
+    align-self: flex-start;
+}
+.modal-btn {
+    align-self: flex-end;
+}
+.modal-h{
+    font-size: 40px;
+    line-height: 100%;
+    padding-top: 2rem;
+}
+.modal-box{
+    background-color: white;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 5rem 1rem 2rem;
+  
+
+   
 }

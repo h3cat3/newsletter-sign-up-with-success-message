@@ -50,9 +50,10 @@
                     </li>
                 </ul>
                 <form id="newsletter">
-                    <label for="email" >Email address</label>
+                    <label for="email" >Email address<span id="error"></span></label>
+                    
                     <input type="email" id="email" placeholder="email@company.com" required>
-                    <button type="submit">
+                    <button type="submit" id="button">
                         Subscribe to monthly newsletter
                     </button>
                 </form>
@@ -63,19 +64,24 @@
                 <img src="./assets/images/illustration-sign-up-mobile.svg" alt="ilustration">
             </picture>
         </main>
-        <!--success message-->
-        <article>   
-            <h1>
-                Thanks for subscribing!
-            </h1>
-            <p>
-                A confirmation email has been sent to ash@loremcompany.com. Please open it and click the button inside to confirm your subscription.
-            </p>
-            <a>
+        <!--modal message-->
+        <div id="my-modal"  class="modal">   
+            <div class="modal-box"> 
+                <div class="box">
+                <img class="modal-image" src="assets/images/icon-success.svg" alt="">
+                <h1 class="modal-h">
+                    Thanks for subscribing!
+                </h1>
+                <p class="modal-p">
+                    A confirmation email has been sent to ash@loremcompany.com. Please open it and click the button inside to confirm your subscription.
+                </p>
+            </div>
+            <button class="modal-btn" id="dismiss-btn">
                 Dismiss message
-            </a>
-        </article>
-         
+            </button>
+            </div> 
+        </div>
+    <script src="script.js"></script>   
         
     </body>
 </html>
