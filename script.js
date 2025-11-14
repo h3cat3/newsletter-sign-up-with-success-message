@@ -16,7 +16,7 @@ send.addEventListener('click',(ev) => {
     //open modal
     modal.style.display = "flex";
     const emailUser = document.getElementById("email-user");
-    emailUser.innerText = email.value ;
+    emailUser.innerHTML = email.value ;
   } else {
     //error state, red border and background color, and message
     email.style.borderColor = "hsl(4, 100%, 67%)";
